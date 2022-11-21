@@ -27,6 +27,7 @@ export default function sendMessage(req, res) {
       console.log(error);
       res.json({
         success: false,
+        error
       });
     });
 }

@@ -32,9 +32,10 @@ export default function Home() {
     if (apiResponse.success) {
       setSuccess(true);
       setMessage(JSON.parse(JSON.stringify(apiResponse.message)));
-      console.log(message);
+      console.log(apiResponse.message);
     } else {
       setError(true);
+      console.log(apiResponse.error)
     }
     setLoading(false);
   };
